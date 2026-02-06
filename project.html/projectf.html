@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2874f0;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            height: 60px;
+        }
+
+        .nav-links {
+            width: 33%;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 34%;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-box {
+            width: 33%;
+            text-align: right;
+        }
+
+        .search-box input {
+            padding: 6px;
+            width: 70%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Products */
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 375px;
+            height: 440px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product-card img {
+            width: 350px;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: green;
+            font-weight: bold;
+        }
+        button {
+            width: 300px;
+            padding: 10px;
+            background-color: #ff9f00;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fb641b;
+            color: white;
+        }
+
+        .footer {
+            background-color: #172337;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <div class="nav-links">
+            <a href="mobile.html">Mobiles</a>
+            <a href="laptopandtv.html">TVs & Laptops</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="logo">
+            Flipkart
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for products">
+        </div>
+
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        Trending Products 🎉
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+
+        <div class="product-card">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-pro-max-1.jpg" alt="Mobile">
+            <h3>I Phone 17 Pro Max</h3>
+            <p>₹1,89,990</p>
+            <button>Add to Cart</button>    
+        </div>
+
+        <div class="product-card">
+            <img src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/307438_0_Hr_F6eJ4w.png?updatedAt=1762868653286" alt="Laptop">
+            <h3>Lenovo LOQ Gaming Laptop</h3>
+            <p>₹80,900</p>
+            <button>Add to Cart</button>    
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtjs63HXtRHwvjU3pFw_Rs32aAAH5BB4RbQ&s" alt="Headphones" height="320px">
+            <h3>Ptron Headphones</h3>
+            <p>₹2,999</p>
+            <button>Add to Cart</button>    
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88eTeCUEm19kUzF3ci-IZPJxQyRwvBPnIJA&s" alt="Watch">
+            <h3>Fastrack Mens Watch</h3>
+            <p>₹4,499</p>
+            <button>Add to Cart</button>    
+        </div>
+
+        <div class="product-card">
+            <img src="https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Entertainment/Television/Images/315258_0_dv11x1.png" alt="Camera">
+            <h3>Samsung Smart Tv HD</h3>
+            <p>₹50,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTcYxrJ4bpyGfsn3QEGyEp2u9XNeLSOdX_Qw&s" alt="Camera">
+            <h3>Speaker</h3>
+            <p>₹2,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+  Contact: support@flipkart.com
+    </div>
+
+</body>
+</html>

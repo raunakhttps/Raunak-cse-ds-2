@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2874f0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background-color: #fb641b;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e55a0d;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .create-account {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #2874f0;
+            color: #2874f0;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .create-account:hover {
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">Flipkart</div>
+        <form>
+            <input type="text" placeholder="Enter Email/Mobile" required>
+            <input type="password" placeholder="Enter Password" required>
+            <a href="#" class="forgot-password">Forgot?</a>
+            <button type="submit">Login</button>
+            <button type="button" class="create-account">Create New Account</button>
+        </form>
+    </div>
+</body>
+</html>
