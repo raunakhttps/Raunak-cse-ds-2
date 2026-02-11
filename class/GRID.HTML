@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+    body{
+        background:#e9e9e9;
+        font-family: Arial, sans-serif;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+
+    .container{
+        width:500px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 200px auto;
+        gap:10px;
+        padding:15px;
+        border:3px solid #ccc;
+        background:white;
+    }
+
+    .box{
+        border:2px solid #bfbfbf;
+        background:#f4f4f4;
+        padding:20px;
+        font-size:20px;
+        text-align:center;
+    }
+
+    .header{
+        grid-column:1 / 4;
+    }
+
+    .nav{
+        grid-column:1 / 4;
+    }
+
+    .left{
+        grid-column:1 / 2;
+    }
+
+    .main{
+        grid-column:2 / 3;
+    }
+
+    .right{
+        grid-column:3 / 4;
+    }
+
+    .footer{
+        grid-column:1 / 4;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box header">Header</div>
+
+    <div class="box nav">Navigation Menu</div>
+
+    <div class="box left">Content</div>
+
+    <div class="box main">Main Content</div>
+
+    <div class="box right">Content</div>
+
+    <div class="box footer">Footer</div>
+
+</div>
+
+</body>
+</html>
